@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <!-- Kullanıcı bilgilerini toplamak için form -->
+    <form>
+        <fieldset>
+            <div>
+                <!-- İsim ve soyisim girişi -->
+                <label for="name">İsim: </label>
+                <input type="text" id="name">
+                <label for="surname">Soyisim: </label>
+                <input type="text" id="surname">
+            </div>
+            <div>
+                <!-- Cinsiyet seçimi -->
+                <label for="gender">Cinsiyet:</label>
+                <input type="radio" name="gender" value="male"> Erkek
+                <input type="radio" name="gender" value="female"> Kadın
+            </div>
+            <div>
+                <!-- E-posta girişi -->
+                <label for="email">E-posta:</label>
+                <input type="email" name="" id="email">
+            </div>
+            <div>
+                <!-- Favori meyve seçimi -->
+                <label for="fruit">Favori Meyve:</label>
+                <select id="fruit">
+                    <option value="">Seçiniz..</option>
+                    <option value="elma">Elma</option>
+                    <option value="çilek">Çilek</option>
+                    <option value="muz">Muz</option>
+                    <option value="portakal">Portakal</option>
+                    <option value="karpuz">Karpuz</option>
+                </select>
+            </div>
+            <div>
+                <!-- Parola girişi -->
+                <label for="password">Parola:</label>
+                <input type="password" id="password">
+            </div>
+            <div>
+                <!-- Mesaj alanı -->
+                <label for="message">Mesaj:</label>
+                <textarea id="message" cols="15" rows="3"></textarea>
+            </div>
+            <div>
+                <!-- Formu gönder butonu -->
+                <button type="send">Gönder</button>
+            </div>
+        
+        </fieldset>
+    </form>
+    
+</body>
+</html>
