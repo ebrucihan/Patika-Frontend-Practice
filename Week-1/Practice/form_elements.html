@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Forms</title>
 </head>
 <body>
     <h1>HTML Forms</h1>
@@ -14,23 +14,31 @@
                 <!-- İsim ve soyisim girişi -->
                 <label for="name">İsim: </label>
                 <input type="text" id="name">
+                <br><br>
                 <label for="surname">Soyisim: </label>
                 <input type="text" id="surname">
             </div>
+            <br>
             <div>
                 <!-- Cinsiyet seçimi -->
                 <label for="gender">Cinsiyet:</label>
+                <br>
                 <input type="radio" name="gender" value="male"> Erkek
+                &nbsp;&nbsp;
                 <input type="radio" name="gender" value="female"> Kadın
             </div>
+            <br>
             <div>
                 <!-- E-posta girişi -->
                 <label for="email">E-posta:</label>
+                <br>
                 <input type="email" name="" id="email">
             </div>
+            <br>
             <div>
                 <!-- Favori meyve seçimi -->
                 <label for="fruit">Favori Meyve:</label>
+                <br>
                 <select id="fruit">
                     <option value="">Seçiniz..</option>
                     <option value="elma">Elma</option>
@@ -40,23 +48,26 @@
                     <option value="karpuz">Karpuz</option>
                 </select>
             </div>
+            <br>
             <div>
                 <!-- Parola girişi -->
                 <label for="password">Parola:</label>
+                <br>
                 <input type="password" id="password">
             </div>
+            <br>
             <div>
                 <!-- Mesaj alanı -->
                 <label for="message">Mesaj:</label>
+                <br>
                 <textarea id="message" cols="15" rows="3"></textarea>
             </div>
+            <br>
             <div>
                 <!-- Formu gönder butonu -->
-                <button type="send">Gönder</button>
+                <button type="submit">Gönder</button>
             </div>
-        
         </fieldset>
     </form>
-    
 </body>
 </html>
