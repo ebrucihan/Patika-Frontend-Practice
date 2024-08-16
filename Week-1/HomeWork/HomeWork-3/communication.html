@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <style>
+        /* Basic page styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            height: 100vh; /* Full viewport height */
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-height: calc(100vh - 80px); /* Height limit to account for footer */
+            overflow-y: auto; /* Add vertical scroll if needed */
+        }
+
+        /* Section heading style */
+        h2 {
+            color: #444;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Paragraph style */
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Unordered list style */
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Form styles */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form label {
+            margin-top: 10px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        form button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed; /* Fixed at the bottom of the page */
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="services.html">Servisler</a></li>
+            <li><a href="communication.html">İletişim</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>İletişim</h2>
+        <p>Bizimle iletişime geçmek için aşağıdaki formu kullanabilirsiniz.</p>
+        <ul>
+            <li>Adres: Şehir Merkezi, Örnek Sokak, No:1</li>
+            <li>Telefon: 0123 456 7890</li>
+            <li>E-posta: info@sehiretkinlikleri.com</li>
+        </ul>
+        <form action="#" method="post">
+            <label for="name">Ad:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 Şehir Etkinlikleri</p>
+    </footer>
+</body>
+</html>
