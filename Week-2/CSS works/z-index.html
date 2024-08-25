@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout: The z-index Property</title>
+    <style>
+        .box{
+            
+           width: 100px; 
+           height: 100px;
+          
+        }
+        .c1{
+            z-index: 1;
+            background-color: hotpink;
+        }
+        .c2{
+            z-index: 2;
+            margin: -50px 0 0 50px;
+            background-color:darkolivegreen;
+        }
+        .c3{
+            z-index: 3;
+            margin: -50px 0 0 100px;
+            background-color:indigo;
+        }
+        .c4{
+            z-index: 4;
+            margin: -50px 0 0 150px;
+            background-color:dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Layout: The z-index Property</h1>
+    <div class="box c1"></div>
+    <div class="box c2"></div>
+    <div class="box c3"></div>
+    <div class="box c4"></div>
+    <h2>z-index Schema</h2>
+    <div style="position:relative ; z-index:3;">
+        <div class="box c1"></div>
+    </div>
+    <div class="box c2"></div>
+</body>
+</html>

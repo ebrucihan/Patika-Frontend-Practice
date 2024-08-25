@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo</title>
+    <style>
+        a:hover{
+            color: violet;
+        }
+        a:active{
+            color: coral;
+        }
+        input:disabled{
+            background-color: lightgreen;
+        }
+        input:not(.name){
+            background-color: aqua !important;
+        }
+       
+        li:nth-child(1n){
+            background-color: aquamarine;
+        }
+        .c1::first-line{
+            color:lightcoral;
+        }
+        .c2::before,
+        .c2::after{
+            content:'';
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            background-color: cornflowerblue;
+            border-radius: 10px;
+        }
+        .c2::before{
+            margin-right: 5px;
+        }
+        .c2::after{
+            margin-left: 5px;
+        }
+        ::selection{
+            color: wheat;
+            background-color: lightpink;
+
+        }
+    
+
+
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Pseudo</h1>
+    <h2>CSS Pseudo-class</h2>
+    <h3>:active</h2>
+    <p><a href="#">Bağlantıya tıkla.</a></p>
+    <h3>:hover</h3>
+    <p><a href="#">Bağlantının üzerine gel.</a></p>
+    <h3>:disabled</h3>
+    <input type="text" disabled>
+    <h3>:not(selector)</h3>
+    <input type="text" class="name">
+    <h3>:nth-child(n)</h3>
+    <ul>
+        <li>İstanbul</li>
+        <li>İzmir</li>
+        <li>Ankara</li>
+        <li>Muğla</li>
+        <li>Antalya</li>
+    </ul>
+    <h2>CSS Pseudo elements</h2>
+    <h3>::first-line</h3>
+    <p class="c1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, magni? Eaque minima magni doloremque doloribus quisquam laudantium temporibus velit fugiat eveniet laboriosam ipsam qui saepe nam modi, alias enim veritatis?</p>
+    <h3>::before, ::after</h3>
+    <p class="c2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium labore facilis maiores ad, dolore aut deleniti enim obcaecati aperiam delectus magni dignissimos vitae impedit dolores unde quos in nemo dolorum!</p>
+    <h3>::selection</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores recusandae pariatur voluptatem sit a, vero, cum velit harum facere rem ipsam quaerat! Neque numquam in, voluptatum voluptatem obcaecati optio eveniet.</p>
+
+</body>
+</html>

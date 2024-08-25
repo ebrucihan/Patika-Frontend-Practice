@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout: The position Property</title>
+    <style>
+        .position{
+            border: 2px solid salmon;
+        }
+
+        .position.relative{
+            position: relative;
+        }
+        .position.absolute{
+            position:absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .position.sticky{
+            position: sticky;
+            top: 0;
+            left: 0;
+            border-color: royalblue;
+        }
+        .position.fixed{
+            position:fixed;
+            top: 0;
+            right: 0;
+            width: 200px;
+            border-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+  <h1>CSS Layout: The position Property</h1>
+  <h2>position: static</h2>
+  <div class="position">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat perspiciatis vel at porro, unde voluptate ullam officiis ducimus saepe mollitia architecto, cum voluptatibus dolor laboriosam nihil commodi nostrum sequi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem animi asperiores incidunt reiciendis ducimus obcaecati officia dolorem suscipit sit eos molestias, distinctio debitis, quibusdam fuga alias ut nihil facere sapiente.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio beatae aliquid voluptatem aliquam sequi vitae placeat modi illum maiores suscipit tempora sint, delectus ipsum esse accusantium debitis sit dolorum commodi.</p>
+
+</div>
+  <h2>position: relative</h2>
+  <div class="position relative">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora fugiat perspiciatis vel at porro, unde voluptate ullam officiis ducimus saepe mollitia architecto, cum voluptatibus dolor laboriosam nihil commodi nostrum sequi!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni optio id doloribus repellat. Temporibus, alias quo a voluptates animi debitis facere ducimus cum quaerat exercitationem. Dicta rem culpa maxime facilis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, ipsum beatae nam quod error illum suscipit cumque eaque, optio quidem odit neque minus quisquam laudantium hic eius, dolor officia ipsam.</p>
+</div>
+   <h2>position: absolute</h2>
+   <div class="position relative">
+    <div class=" position absolute">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, quia in. Nemo maiores a officiis, explicabo hic deserunt. Fugiat, doloremque necessitatibus error distinctio modi numquam eveniet et eligendi molestiae inventore.</p>
+    </div>
+</div>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+
+    <h2>position: sticky</h2>
+    <div class="position sticky">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ullam ducimus magnam dolor consequuntur blanditiis odio error dicta amet dignissimos, aliquid corrupti architecto modi laudantium, harum illum vitae tempore officiis!</p>
+    </div>
+    <div class="position fixed">Bu bir sabit öğedir.</div>
+
+   </div>
+   <div style="height: 100vh;"></div>
+    
+    
+</body>
+
+
+</html>
