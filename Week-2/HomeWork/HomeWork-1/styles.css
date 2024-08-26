@@ -1,0 +1,87 @@
+/* General Style Settings */
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the body */
+    color: #333; /* Text color */
+    background-color: #f4f4f4; /* Background color */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+h1 {
+    text-align: center; /* Centers the heading text */
+    color: #fff; /* White text color */
+    background-color: #333; /* Dark background color */
+    padding: 20px 0; /* Vertical padding */
+    margin: 0; /* Removes default margin */
+}
+
+nav ul {
+    display: flex; /* Displays list items in a row */
+    justify-content: center; /* Centers list items horizontally */
+    list-style: none; /* Removes default list style */
+    padding: 0; /* Removes default padding */
+    background-color: #333; /* Dark background color for navigation */
+    margin: 0; /* Removes default margin */
+}
+
+nav ul li {
+    margin: 0 15px; /* Adds horizontal margin between list items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: #fff; /* White text color for links */
+    padding: 15px 20px; /* Padding inside links */
+    display: block; /* Makes links block-level elements */
+}
+
+nav ul li a:hover {
+    background-color: #444; /* Changes background color on hover */
+}
+
+.recent-posts-title {
+    text-align: left; /* Aligns the title to the left */
+    margin-left: 20px; /* Adds left margin */
+    font-size: 24px; /* Sets font size for the title */
+    color: #333; /* Text color */
+    margin-bottom: 20px; /* Adds bottom margin */
+}
+
+section {
+    display: flex; /* Displays articles in a row */
+    justify-content: space-around; /* Distributes articles with space around them */
+    margin: 20px auto; /* Adds vertical margin and centers horizontally */
+    max-width: 1200px; /* Sets maximum width for the section */
+}
+
+article {
+    background-color: #fff; /* White background color */
+    padding: 20px; /* Padding inside articles */
+    border-radius: 8px; /* Rounds the corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    width: calc(100% / 3 - 40px); /* Sets width to one-third of the container minus margins */
+    margin: 20px auto; /* Adds vertical margin and centers horizontally */
+    text-align: center; /* Centers text inside articles */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+article img {
+    width: 100%; /* Sets image width to 100% of its container */
+    height: 400px; /* Sets fixed height for images */
+    object-fit: cover; /* Crops the image to fit the container */
+    border-radius: 8px; /* Rounds the corners of images */
+}
+
+article h2 {
+    margin-top: 15px; /* Adds top margin to headings inside articles */
+}
+
+footer {
+    background-color: #333; /* Dark background color for the footer */
+    color: #fff; /* White text color */
+    text-align: center; /* Centers text in the footer */
+    padding: 10px 0; /* Vertical padding */
+    width: 100%; /* Makes footer span the full width */
+    bottom: 0; /* Positions footer at the bottom */
+    margin-top: 20px; /* Adds top margin to the footer */
+}
