@@ -1,65 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfolio</title>
-</head>
-<body>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>PORTFOLIO WEBSITE</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <input type="checkbox" class="menu-btn" id="menu-btn">
-        <label class="menu-btn" for="menu-icon">
-            <i class="fa-solid fa-bars menu-hmbgr"></i>
-
-        </label>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-
-        </nav>
-
+      <a href="#" class="logo">Portfolio</a>
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label class="menu-btn" for="menu-icon">
+        <i class="fa-solid fa-bars menu-hmbgr"></i>
+      </label>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
-
+    <!-- HOME -->
     <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello!</h3>
-            <h1>I am Ebru Cihan</h1>
-            <h3>and I am <span class="home-span">
-                <span class="frontend-span">
-                    Front-end
-                </span>
-                <span class="backend-span">
-                    Back-end
-                </span>
-                <span class="fullstack-span">
-                    Full-Stack
-            </span>
-            <span class="last-span">
-                Developer
-            </span>
-
-                </span>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, praesentium. Adipisci autem totam sit voluptatem repellat tempore sed eius architecto temporibus, ex consectetur similique fugiat qui aspernatur vel ea officia.</p>
-            <div class="social-link">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="# " class="cv-btn"><i class="fa-solid fa-newspaper"></i></a>
-            </div>
-
+      <div class="home-content">
+        <h3>Hello!</h3>
+        <h1>I am Ebru Cihan</h1>
+        <h3>
+          and I am
+          <span class="home-span">
+            <span class="frontend-span"> Front-end </span>
+            <span class="backend-span"> Back-end </span>
+            <span class="fullstack-span"> Full-Stack </span>
+            <span class="last-span"> Developer </span>
+          </span>
+        </h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem,
+          ratione.
+        </p>
+        <div class="social-links">
+          <a href="#"> <i class="fa-brands fa-github"></i> </a>
+          <a href="#"> <i class="fa-brands fa-linkedin"></i> </a>
+          <a href="#" class="cv-btn"> <i class="fa-solid fa-newspaper"> </i></a>
         </div>
-        <div class="home-img"></div>
-
+      </div>
+      <div class="home-img">
+        <img src="assets/profile.png" alt="Profile Picture" />
+        <div class="home-img-clip"></div>
+      </div>
     </section>
-    
-</body>
+
+    <!--
+        root(): CSS değişkenlerini ibirden fazla yerde tekrar eden yerleri merkezi noktada birleştirir.
+        cli
+        
+     -->
+
+    <!--ABOUT START-->
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="assets/profile.png" alt="profile.img" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span class="about-span">Me</span></h2>
+        <h3>Front-end Developer</h3>
+        <p>
+          <span>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
+            laudantium impedit incidunt officia ratione, dolore maiores delectus
+            consequatur odio ipsam ipsa ea reprehenderit eligendi explicabo
+            suscipit hic dolorum numquam tempore? Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Repudiandae dolores veniam, reiciendis
+            tempore eos voluptas, blanditiis ut voluptatibus quasi minus
+            cupiditate, sint magnam ullam harum quas est repellendus corrupti
+            tempora.
+          </span>
+        </p>
+        <a href="#" class="about-btn">More About Me</a>
+      </div>
+    </section>
+
+    <!--ABOUT END-->
+
+    <!--SERVICES START-->
+    <section class="services" id="services">
+      <h2 class="heading">Our <span class="services-span">Services</span></h2>
+      <div class="services-container">
+        <div class="services-box">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h3>Web Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+            rerum, consectetur est culpa et voluptatem pariatur quas blanditiis
+            aliquam sint.
+          </p>
+          <a href="#" class="services-btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            eveniet dolorum atque fuga similique illo deserunt at delectus magni
+            nobis!
+          </p>
+          <a href="#" class="services-btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="fa-solid fa-mobile"></i>
+          <h3>Responsive Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            sequi repellat dolor iure temporibus ipsa fuga modi culpa ratione
+            dicta?
+          </p>
+          <a href="#" class="services-btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!--SERVICES END-->
+  </body>
 </html>

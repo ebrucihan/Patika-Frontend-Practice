@@ -1,0 +1,29 @@
+
+body {
+  padding-top: 54px; /* Navbar ile içerik birleşmesini önlemek için padding */
+}
+
+
+::placeholder {
+  background-image: url('search-solid.svg'); /* Arama simgesi */
+  background-repeat: no-repeat; /* Resmin tekrar etmemesi için */
+  background-position: left center; /* Sol tarafa ortalayarak konumlandırma */
+  padding-left: 25px; /* Simge ile metin arasında boşluk bırakma */
+}
+
+
+.nav-link i {
+  color: #333; /* Genel renk */
+  font-size: 20px; /* Genel boyut */
+  transition: color 0.3s ease; /* Hover efekti için geçiş */
+}
+
+.nav-link i:hover {
+  transform: scale(1.1); /* Hover rengini mavi yap */
+}
+
+table{
+  position: sticky;
+  top: 110px; /* Menü yüksekliğinden biraz daha fazla bir değer */
+  
+}
