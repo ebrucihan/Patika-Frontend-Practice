@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="blog.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Moderustic:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+    <title>YummyBlog</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Yummy<span>Blog</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#meal-plans-section">Meal Plans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#healthy-eating-section"
+                >Healthy Eating</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cooking-tips-section">Cooking Tips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-section">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-icon" href="#"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon" href="#"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon" href="#"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon" href="#"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <header class="text-center py-5">
+      <div class="jumbotron">
+        <h1>Welcome to YummyBlog!</h1>
+        <p class="lead">
+          Explore a variety of delicious meal plans, get insightful tips on
+          healthy eating, and master cooking techniques with expert advice. Your
+          culinary journey starts here!
+        </p>
+      </div>
+    </header>
+
+    <!--carousel-->
+
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner my-7">
+        <div class="carousel-item active">
+          <img
+            src="assets/cooking-tips-2.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/meal-plan.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/healthy2.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="assets/cooking-tips.jpg"
+              class="card-img-top"
+              alt="Cooking Tips"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cooking Tips</h5>
+              <p class="card-text">
+                Enhance your cooking skills with quick and easy tips. Learn how
+                to improve flavor, texture, and presentation in every meal.
+              </p>
+              <a href="#cooking-tips-section" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="assets/meal-plans.jpg"
+              class="card-img-top"
+              alt="Meal Plans"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Meal Plans</h5>
+              <p class="card-text">
+                Simplify your meals with organized plans that save time and
+                effort. Discover weekly menus and recipes tailored to your
+                needs.
+              </p>
+              <a href="#meal-plans-section" class="btn btn-dark">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="assets/healthy-eat.jpg"
+              class="card-img-top"
+              alt="Healthy Eating"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Healthy Eating</h5>
+              <p class="card-text">
+                Embrace a balanced diet with nutrient-rich foods for optimal
+                health. Explore tips and recipes for a healthier lifestyle.
+              </p>
+              <a href="#healthy-eating-section" class="btn btn-dark"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Meal Plans Section -->
+    <section id="meal-plans-section" class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <article class="blog-post">
+              <header class="blog-post-header">
+                <h2 class="heading">Meal Plans: A Guide to Healthy Eating</h2>
+                <p class="blog-post-meta">
+                  Written by <a href="#">Jhon Doe</a> on August 30, 2024
+                </p>
+              </header>
+              <figure class="blog-post-image"></figure>
+              <div class="blog-post-content">
+                <p>
+                  Planning your meals ahead can be a game-changer in maintaining
+                  a healthy lifestyle. With the right meal plans, you can save
+                  time, reduce stress, and ensure you are consuming a balanced
+                  diet. In this post, we’ll explore various meal planning
+                  strategies, including customizable options and practical tips
+                  to make your meal preparation effortless.
+                </p>
+                <h3>Why Meal Planning Matters</h3>
+                <p>
+                  Meal planning is not just about organizing your food; it’s
+                  about enhancing your overall health and wellness. By planning
+                  your meals, you can make sure that you are eating a variety of
+                  nutrients and avoiding unhealthy snacking. Meal planning also
+                  helps in budgeting, as you will be less likely to spend money
+                  on impulse buys or eating out.
+                </p>
+                <h3>Tips for Effective Meal Planning</h3>
+                <ul>
+                  <li>
+                    <strong>Set a Weekly Menu:</strong> Choose meals for the
+                    week based on your dietary needs and preferences. Include a
+                    mix of proteins, vegetables, and whole grains.
+                  </li>
+                  <li>
+                    <strong>Make a Shopping List:</strong> Prepare a grocery
+                    list based on your weekly menu. This will help you avoid
+                    buying unnecessary items.
+                  </li>
+                  <li>
+                    <strong>Batch Cook:</strong> Prepare meals in batches and
+                    store them in the fridge or freezer. This will save you time
+                    during busy weekdays.
+                  </li>
+                  <li>
+                    <strong>Stay Flexible:</strong> Allow for some flexibility
+                    in your meal plan. Life can be unpredictable, so having a
+                    few easy-to-make meals on hand can be a lifesaver.
+                  </li>
+                </ul>
+                <h3>Sample Meal Plan</h3>
+                <p>Here is a simple meal plan to get you started:</p>
+                <ul>
+                  <li>
+                    <strong>Breakfast:</strong> Overnight oats with fresh
+                    berries and nuts.
+                  </li>
+                  <li>
+                    <strong>Lunch:</strong> Grilled chicken salad with a variety
+                    of vegetables.
+                  </li>
+                  <li>
+                    <strong>Dinner:</strong> Baked salmon with quinoa and
+                    steamed broccoli.
+                  </li>
+                  <li>
+                    <strong>Snack:</strong> Greek yogurt with honey and a
+                    handful of almonds.
+                  </li>
+                </ul>
+                <p>
+                  Remember, the key to successful meal planning is consistency
+                  and preparation. By incorporating these tips into your
+                  routine, you’ll be able to enjoy healthier meals with less
+                  effort.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Healthy Eating Section -->
+    <section id="healthy-eating-section" class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <article class="blog-post">
+              <header class="blog-post-header">
+                <h2 class="heading">Healthy Eating: A Path to Wellness</h2>
+                <p class="blog-post-meta">
+                  Written by <a href="#">Sophia Williams</a> on August 30, 2024
+                </p>
+              </header>
+              <figure class="blog-post-image"></figure>
+              <div class="blog-post-content">
+                <p>
+                  Adopting healthy eating habits is essential for maintaining a
+                  balanced lifestyle and promoting overall well-being. In this
+                  blog post, we’ll dive into the fundamentals of healthy eating,
+                  explore various dietary strategies, and offer practical tips
+                  to help you make better food choices.
+                </p>
+                <h3>The Importance of a Balanced Diet</h3>
+                <p>
+                  A balanced diet provides the essential nutrients your body
+                  needs to function optimally. Consuming a variety of foods
+                  ensures you get the right mix of vitamins, minerals, proteins,
+                  fats, and carbohydrates. This approach not only supports
+                  physical health but also contributes to mental clarity and
+                  emotional stability.
+                </p>
+                <h3>Tips for Healthy Eating</h3>
+                <ul>
+                  <li>
+                    <strong>Eat a Variety of Foods:</strong> Include a range of
+                    fruits, vegetables, lean proteins, and whole grains in your
+                    diet. This variety ensures you receive a wide spectrum of
+                    nutrients.
+                  </li>
+                  <li>
+                    <strong>Control Portion Sizes:</strong> Be mindful of
+                    portion sizes to avoid overeating. Use smaller plates and
+                    listen to your body's hunger cues.
+                  </li>
+                  <li>
+                    <strong>Limit Processed Foods:</strong> Reduce your intake
+                    of processed foods and sugary beverages. Opt for whole,
+                    natural foods whenever possible.
+                  </li>
+                  <li>
+                    <strong>Stay Hydrated:</strong> Drink plenty of water
+                    throughout the day. Hydration is key for digestion, energy
+                    levels, and overall health.
+                  </li>
+                </ul>
+                <h3>Sample Healthy Meal Plan</h3>
+                <p>
+                  Here’s a sample meal plan to inspire your healthy eating
+                  journey:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Breakfast:</strong> Smoothie with spinach, banana,
+                    and almond milk.
+                  </li>
+                  <li>
+                    <strong>Lunch:</strong> Quinoa salad with mixed greens,
+                    chickpeas, and avocado.
+                  </li>
+                  <li>
+                    <strong>Dinner:</strong> Grilled chicken breast with sweet
+                    potatoes and steamed asparagus.
+                  </li>
+                  <li>
+                    <strong>Snack:</strong> Fresh fruit slices with a handful of
+                    nuts.
+                  </li>
+                </ul>
+                <p>
+                  Embracing healthy eating is a journey, not a destination. By
+                  making small, sustainable changes to your diet, you can
+                  improve your health and well-being over time.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cooking Tips Section -->
+    <section id="cooking-tips-section" class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <article class="blog-post">
+              <header class="blog-post-header">
+                <h2 class="heading">
+                  Cooking Tips: Master Your Kitchen Skills
+                </h2>
+                <p class="blog-post-meta">
+                  Written by <a href="#">Mia Hall</a> on August 30, 2024
+                </p>
+              </header>
+              <figure class="blog-post-image"></figure>
+              <div class="blog-post-content">
+                <p>
+                  Cooking is both an art and a science, and mastering a few key
+                  techniques can elevate your culinary creations. In this blog
+                  post, we’ll share essential cooking tips that will help you
+                  enhance your kitchen skills and make your cooking experience
+                  more enjoyable and efficient.
+                </p>
+                <h3>Basic Cooking Techniques</h3>
+                <p>
+                  Understanding basic cooking techniques is crucial for
+                  preparing a variety of dishes. Here are some fundamental
+                  techniques to master:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Sautéing:</strong> Cooking food quickly in a small
+                    amount of oil over high heat. This technique is great for
+                    vegetables and proteins.
+                  </li>
+                  <li>
+                    <strong>Roasting:</strong> Cooking food in the oven with dry
+                    heat. Roasting brings out the natural sweetness and flavor
+                    in vegetables and meats.
+                  </li>
+                  <li>
+                    <strong>Simmering:</strong> Cooking food gently in liquid at
+                    a low temperature. This technique is ideal for soups, stews,
+                    and sauces.
+                  </li>
+                  <li>
+                    <strong>Grilling:</strong> Cooking food over an open flame
+                    or grill. Grilling adds a smoky flavor and charred texture
+                    to meats and vegetables.
+                  </li>
+                </ul>
+                <h3>Tips for Perfecting Your Dishes</h3>
+                <ul>
+                  <li>
+                    <strong>Use Fresh Ingredients:</strong> Fresh ingredients
+                    make a significant difference in flavor and texture. Choose
+                    high-quality produce, meats, and herbs for the best results.
+                  </li>
+                  <li>
+                    <strong>Season Properly:</strong> Don’t be afraid to use
+                    herbs, spices, and salt to enhance the flavor of your
+                    dishes. Taste as you cook and adjust the seasoning as
+                    needed.
+                  </li>
+                  <li>
+                    <strong>Invest in Good Cookware:</strong> Quality pots,
+                    pans, and utensils can improve your cooking experience and
+                    ensure even cooking.
+                  </li>
+                  <li>
+                    <strong>Practice Patience:</strong> Cooking takes time, and
+                    rushing through the process can lead to subpar results.
+                    Allow your dishes to cook properly and enjoy the process.
+                  </li>
+                </ul>
+                <h3>Sample Recipe: Quick Stir-Fry</h3>
+                <p>
+                  Try this easy stir-fry recipe for a quick and delicious meal:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Ingredients:</strong> 1 cup sliced chicken breast, 1
+                    cup mixed vegetables (bell peppers, broccoli, carrots), 2
+                    tablespoons soy sauce, 1 tablespoon olive oil.
+                  </li>
+                  <li>
+                    <strong>Instructions:</strong> Heat oil in a pan, add
+                    chicken and cook until browned. Add vegetables and soy
+                    sauce, and cook until vegetables are tender. Serve with rice
+                    or noodles.
+                  </li>
+                </ul>
+                <p>
+                  By incorporating these cooking tips into your routine, you’ll
+                  improve your culinary skills and make every meal a success.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="heading">Contact Us</h2>
+            <p>
+              If you have any questions or comments, feel free to reach out to
+              us using the form below.
+            </p>
+            <form action="your-form-handler.php" method="post">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3">
+      <div class="container text-center">
+        <p>&copy; 2024 YummyBlog. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76A7uZZuU5v4F0aP5ZlVKOjzCAt8F+U2P6M1B4AtQ4sfZ9xv6EOMV5u0Et5sNZ6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

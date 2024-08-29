@@ -1,0 +1,204 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--bg-color);
+}
+
+:root {
+  --bg-color: #697565;
+  --second-bg-color: #3c3d37;
+  --text-color: #ecdfcc;
+  --main-color: #1e201e;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--main-color) !important;
+}
+
+.navbar-brand span {
+  color: var(--bg-color);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: var(--text-color) !important;
+}
+
+.navbar-toggler-icon {
+  background-color: var(--text-color);
+}
+
+.navbar-nav .nav-icon {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* İkonlar arasındaki boşluk */
+}
+
+.nav-icon i {
+  color: var(--text-color);
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 2rem;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  font-size: 3rem; /* Başlık boyutu */
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Gölge */
+}
+
+.jumbotron p {
+  font-size: 1.2rem; /* Yazı boyutu */
+  line-height: 2.5; /* Satır yüksekliği */
+}
+
+/* Container */
+.container {
+  padding-top: 15px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 4.5rem;
+  text-align: left;
+  color: var(--text-color);
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: var(--second-bg-color);
+  text-align: left;
+  font-weight: 750;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Carousel */
+.carousel-inner {
+  height: 400px; /* Adjust this value as needed */
+}
+
+.carousel-inner img {
+  width: 100%; /* Ensure the image fills the width of the carousel */
+  height: 531px; /* Set a fixed height for consistency */
+  object-fit: cover; /* Cover the container while preserving aspect ratio */
+}
+
+/* Card */
+.card-img-top {
+  width: 100%;
+  height: 300px; /* Sabit yükseklik, ihtiyaca göre ayarlayın */
+  object-fit: cover;
+}
+
+/* Meal Plans Section */
+#meal-plans-section {
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  padding: 3rem 0;
+}
+
+#meal-plans-section .meal-content h2 {
+  color: var(--main-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Healthy Eating Section */
+#healthy-eating-section {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 3rem 0;
+}
+
+#healthy-eating-section h2 {
+  color: var(--main-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#healthy-eating-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Cooking Tips Section */
+#cooking-tips-section {
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  padding: 3rem 0;
+}
+
+#cooking-tips-section h2 {
+  color: var(--main-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#cooking-tips-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+#contact-section {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  padding: 3rem 0;
+}
+
+#contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+#contact-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+#contact-section .form-group {
+  margin-bottom: 1.5rem;
+}
+
+#contact-section .form-control {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--second-bg-color);
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+}
+
+#contact-section .btn-primary {
+  background-color: var(--second-bg-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  color: var(--text-color);
+}
+
+#contact-section .btn-primary:hover {
+  background-color: darken(var(--second-bg-color), 10%);
+}
