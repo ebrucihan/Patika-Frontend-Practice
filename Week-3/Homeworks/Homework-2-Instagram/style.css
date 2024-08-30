@@ -1,29 +1,135 @@
-
 body {
-  padding-top: 54px; /* Navbar ile içerik birleşmesini önlemek için padding */
+  font-family: "Proxima Nova", sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
+/*Navbar Start*/
 
-::placeholder {
-  background-image: url('search-solid.svg'); /* Arama simgesi */
-  background-repeat: no-repeat; /* Resmin tekrar etmemesi için */
-  background-position: left center; /* Sol tarafa ortalayarak konumlandırma */
-  padding-left: 25px; /* Simge ile metin arasında boşluk bırakma */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 54px;
+  padding: 0.1rem 11%;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border-bottom: 1px solid #ccc;
 }
 
-
-.nav-link i {
-  color: #333; /* Genel renk */
-  font-size: 20px; /* Genel boyut */
-  transition: color 0.3s ease; /* Hover efekti için geçiş */
+.logo img {
+  width: auto; /* Logonun genişliği otomatik ayarlanır */
+  height: 40px; /* Logonun yüksekliğini özelleştirin */
+  cursor: pointer;
 }
 
-.nav-link i:hover {
-  transform: scale(1.1); /* Hover rengini mavi yap */
+.position-relative {
+  position: relative;
 }
 
-table{
-  position: sticky;
-  top: 110px; /* Menü yüksekliğinden biraz daha fazla bir değer */
-  
+.search {
+  padding-left: 10px;
+  text-align: center; /* İkon için boşluk bırakır */
+  width: 100%; /* Input alanının genişliğini ayarlar */
+  border: 1px solid #ccc; /* Çerçeve rengini ayarlayın */
+  border-radius: 4px; /* Köşeleri yuvarlayın */
+  height: 35px; /* Yüksekliği ayarlar */
+}
+
+.search-icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000000;
+}
+
+.navbar i {
+  color: black;
+  padding: 14px;
+  width: auto;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.navbar img {
+  padding: 14px;
+  width: 55px;
+  height: 55px;
+  margin-top: 7px;
+}
+
+/*Navbar End*/
+
+/*Story Start*/
+.container {
+  margin-top: 100px; /* Navbar yüksekliği kadar boşluk bırakın */
+}
+
+.story-container {
+  width: 90%; /* Story alanının genişliğini belirler, örneğin %80 */
+  max-width: 600px; /* Maksimum genişlik, örneğin 600px */
+  border: 2px solid #e6e6e6; /* Dış çerçeve */
+  padding: 20px;
+  display: flex;
+  justify-content: space-around; /* Story öğeleri arasında boşluk bırakır */
+  align-items: center;
+  background-color: #f9f9f9; /* Arka plan rengi */
+  margin-left: 105px; /* Sol hizalamak için sol margin sıfır */
+}
+
+.story-item {
+  text-align: center;
+  margin: 0 5px;
+}
+
+.story-item img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #d30dc9;
+}
+
+.card {
+  width: 90%;
+  margin-left: 105px;
+  max-width: 600px;
+}
+
+.ebruucihan-username {
+  color: #1e201e; /* Kullanıcı adının rengini özelleştirin */
+  font-weight: bold; /* Kullanıcı adını kalın yapın */
+  margin-left: 0px; /* Kullanıcı adının sol tarafına boşluk ekleyin */
+  padding: 10px;
+}
+.profile-img {
+  width: 35px; /* Genişliği 35px olarak ayarla */
+  height: 35px; /* Yüksekliği 35px olarak ayarla */
+  border-radius: 50%; /* Çember şeklinde görünmesini sağla */
+  border: 2px solid #d30dc9; /* İnce bir gri kenarlık ekle */
+  object-fit: cover; /* Resmin oranını koruyarak kapsama sağla */
+  margin-right: 0px; /* Sağ tarafa 10px boşluk bırak */
+}
+
+.icon-container {
+  font-size: large;
+  margin-left: 400px;
+}
+
+.card-img-top {
+  margin-top: 20px;
+}
+
+.fixed-top-card {
+  position: fixed; /* Sabit konumlandırma */
+  top: 80px; /* Üstten sıfır uzaklıkta kalır */
+  right: 0; /* Sağdan sıfır uzaklıkta kalır */
+  margin: 20px; /* Ekranın kenarlarından biraz boşluk bırakır */
+  z-index: 1000; /* Diğer öğelerin üstünde görünmesini sağlar */
+  margin-right: 300px;
 }
