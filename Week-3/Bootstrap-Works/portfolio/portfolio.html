@@ -138,5 +138,138 @@
     </section>
 
     <!--SERVICES END-->
+
+    <!-- Portfolio Start -->
+    <!--
+    @keyframes animate-text
+    to {
+    background-size:100%;
+    }
+    @keyframes: animasyon tanımlaması yapacagımı söylüyorm. ekranda kapsayıcı kısmı belirtir.
+    100%:kapsayıcı olacak genişlik ve yükseklik.
+
+
+    grid-template-columns:repeat(3,1fr);kapsayıcının genişliğini eşit olarak 
+    3 sütuna böler.
+
+    aspect-ratio:4/3; Ögenin genişlik ve yüksekliğinin arasında 4/3
+    Ögenin yüksekliğinin ve genişliğinin 3/4 kadar olmasını 
+    belirtir. Kapsayıcısı ve öge arasında.
+
+    transform:tanslateY(-100%); ögeyi kendi yüksekliğini 100%'ü kadar yukarıya kaydırır.
+
+    tranformd:translate(0);Ögeyi kendi tanımlı ekseninde konumlandırır.
+
+    box-shadow: 0 0 1rem var(--bg-color):
+    0:yatay 0:dikey 1rem:gölgenin bulanıklıgının belirtiyoruz.
+    var(--bg-color):Gölgenin renginin belirtiyor.
+ -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">My <span class="portfolio-span">Projects</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="assets/project-1.jpg" alt="Project Screenshot" />
+          <div class="portfolio-layer">
+            <h4>Project</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              recusandae.
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i> </a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="assets/project-2.jpg" alt="Project Screenshot" />
+          <div class="portfolio-layer">
+            <h4>Project</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              recusandae.
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i> </a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="assets/project-3.jpg" alt="Project Screenshot" />
+          <div class="portfolio-layer">
+            <h4>Project</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              recusandae.
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i> </a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="assets/project-4.jpg" alt="Project Screenshot" />
+          <div class="portfolio-layer">
+            <h4>Project</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              recusandae.
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i> </a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="assets/project-5.jpg" alt="Project Screenshot" />
+          <div class="portfolio-layer">
+            <h4>Project</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              recusandae.
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i> </a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="assets/project-6.jpg" alt="Project Screenshot" />
+          <div class="portfolio-layer">
+            <h4>Project</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+              recusandae.
+            </p>
+            <a href="#"><i class="fa-solid fa-link"></i> </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio End -->
+    <!-- Contact Start -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span class="portfolio-span">Me</span></h2>
+      <form action="#">
+        <div class="input-div">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-div">
+          <input type="number" placeholder="Phone Number" />
+          <input type="email" placeholder="Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Enter Your Mesage"
+        ></textarea>
+        <input type="submit" value="Send Mail" class="contact-btn" />
+      </form>
+    </section>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by Furkan Taşdemir | All Rights Reserved</p>
+        <div class="footer-icon-top">
+          <a href="#home"> <i class="fa-solid fa-arrow-up"></i> </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
   </body>
 </html>
