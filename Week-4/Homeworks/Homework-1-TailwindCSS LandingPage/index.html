@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-12">
+    <!-- Full page layout -->
+    <div class="flex flex-col">
+      <!-- Navigation bar -->
+      <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+              <img class="h-8 w-auto" src="logo.png" alt="Your Company" />
+            </div>
+
+            <!-- Button and Links container -->
+            <div class="flex items-center space-x-4">
+              <!-- Links -->
+              <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-gray-700 hover:text-gray-900">Link</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">Link</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900">Link</a>
+              </div>
+
+              <!-- Sign up button -->
+              <div class="hidden md:flex">
+                <a
+                  href="#"
+                  class="text-white bg-violet-600 hover:bg-violet-700 px-4 py-2 rounded-md"
+                  >Sign up</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mt-5 flex justify-between items-center">
+        <!-- Left section -->
+        <div class="bg-white rounded-lg p-10 w-1/2">
+          <p class="text-violet-500 text-sm font-semibold text-center">
+            Mamba design system
+          </p>
+          <h1 class="text-4xl font-bold mt-2 text-center">
+            Build it with Mamba
+          </h1>
+          <p class="text-gray-600 mt-4 text-center">
+            Modular and versatile. The ultimate design toolkit for savvy
+            technology startups.
+          </p>
+          <form class="mt-6">
+            <input
+              type="text"
+              placeholder="Your name"
+              class="w-full border rounded-md p-3 mt-4"
+            />
+            <input
+              type="email"
+              placeholder="Email address"
+              class="w-full border rounded-md p-3 mt-4"
+            />
+            <button
+              class="w-full bg-violet-600 text-white rounded-md py-3 mt-6"
+            >
+              Join the waitlist
+            </button>
+          </form>
+        </div>
+
+        <!-- Right section (image) -->
+        <div class="w-1/2 p-6">
+          <img
+            src="https://picsum.photos/id/77/740/460"
+            alt="Stairs image"
+            class="object-cover h-full w-full rounded-lg"
+          />
+        </div>
+      </div>
+
+      <h2 class="font-medium mt-10 text-center text-violet-600">
+        HOW IT WORKS
+      </h2>
+      <h1 class="text-4xl font-bold text-center p-6">
+        Building with Mamba is simple
+      </h1>
+      <div class="grid grid-cols-3 gap-4 text-white text-center">
+        <div class="p-4 shadow rounded text-black bg-white flex items-center">
+          <!-- Step 1 -->
+          <div
+            class="bg-violet-600 text-white rounded-full h-8 w-8 flex items-center justify-center mr-4"
+          >
+            1
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="p-4 shadow rounded text-black bg-white flex items-center">
+          <!-- Step 2 -->
+          <div
+            class="bg-violet-600 text-white rounded-full h-8 w-8 flex items-center justify-center mr-4"
+          >
+            2
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="p-4 shadow rounded text-black bg-white flex items-center">
+          <!-- Step 3 -->
+          <div
+            class="bg-violet-600 text-white rounded-full h-8 w-8 flex items-center justify-center mr-4"
+          >
+            3
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 flex justify-between items-center">
+      <div class="w-1/2 p-6">
+        <img
+          src="https://picsum.photos/id/71/540/200"
+          alt="Stairs image"
+          class="object-cover h-full w-full rounded-lg"
+        />
+      </div>
+
+      <div class="bg-white rounded-lg p-10 w-1/2">
+        <!-- Testimonial -->
+        <div
+          class="bg-gray-600 text-white rounded-full h-12 w-12 flex items-center justify-center"
+        >
+          ?
+        </div>
+        <p class="text-black mt-4 text-center italic">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vitae
+          est incidunt repudiandae! Praesentium, animi!"
+        </p>
+
+        <h4 class="text-sm text-gray-500 mt-4 text-center">Leroy Jenkins</h4>
+        <h4 class="text-sm text-gray-500 text-center">Ceo of Company Co.</h4>
+      </div>
+    </div>
+
+    <div class="flex flex-col bg-white mt-5 p-7">
+      <h1 class="text-4xl text-black mt-3 font-bold">Create with us</h1>
+      <p class="mt-5">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint deleniti
+        necessitatibus dolores accusantium suscipit placeat corrupti, dolorem
+        maiores fuga saepe est laudantium laboriosam laborum accusamus harum
+        itaque quibusdam nam sunt. Aliquid, pariatur. Nisi qui molestiae
+        consequuntur enim, corrupti vitae maiores minus natus dolor magni autem
+        laudantium, sapiente eaque iusto? Ipsum blanditiis laudantium, veritatis
+        non ut, qui itaque necessitatibus assumenda aperiam aliquid praesentium
+        reiciendis perferendis nisi dolorem expedita eos! Quaerat, qui?
+      </p>
+    </div>
+
+    <div class="container mt-8 flex justify-between items-center">
+      <div class="w-1/2">
+        <img
+          src="https://picsum.photos/id/27/1000/450"
+          alt="Stairs image"
+          class="object-cover h-full w-full rounded-lg"
+        />
+      </div>
+
+      <div class="bg-white rounded-lg p-10 w-1/2">
+        <!-- Call to action -->
+        <button class="w-1/6 bg-violet-600 text-white rounded-full text-center">
+          Business
+        </button>
+
+        <h1 class="text-4xl text-black mt-3 font-bold">
+          Curating a workplace that inspires team movement
+        </h1>
+        <div class="mt-4 text-white">-</div>
+
+        <h4 class="text-sm text-gray-500 mt-12">November 30, 2024</h4>
+        <h4 class="text-sm text-gray-500">By Leroy Jenkins</h4>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4 text-white text-center mt-10">
+      <div class="p-4 shadow rounded text-black bg-white flex items-center">
+        <!-- Feature 1 -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          harum dicta quo voluptatum veniam officiis consectetur officia
+          molestiae ipsam illo.
+        </p>
+      </div>
+      <div class="p-4 shadow rounded text-black bg-white flex items-center">
+        <!-- Feature 2 -->
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit,
+          recusandae repudiandae nemo tempore maiores tempora quaerat porro
+          saepe ipsa sunt!
+        </p>
+      </div>
+      <div class="p-4 shadow rounded text-black bg-white flex items-center">
+        <!-- Feature 3 -->
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ea
+          culpa asperiores nam alias nesciunt magnam commodi, modi magni maxime!
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col bg-white mt-10 p-7">
+      <h1 class="text-4xl text-black mt-3 font-bold text-center">
+        Our team is here to help you
+      </h1>
+      <h3 class="text-sm text-black mt-3 text-center">Meet our crew ></h3>
+
+      <img
+        src="https://picsum.photos/id/48/600/200"
+        alt="Stairs image"
+        class="mt-5 rounded-lg"
+      />
+    </div>
+
+    <!-- Footer -->
+    <div class="text-white text-center mt-10">
+      <footer class="bg-white mt-10 py-6">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="flex space-x-4">
+            <h1 class="p-5 text-black font-bold">Mamba</h1>
+          </div>
+
+          <div class="text-gray-600 p-5">
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
