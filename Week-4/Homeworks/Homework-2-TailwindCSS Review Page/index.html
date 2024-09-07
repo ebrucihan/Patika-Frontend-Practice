@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Review Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-300">
+    <div class="flex flex-col">
+      <!-- Sticky Navigation bar -->
+      <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center h-16">
+            <!-- Links container (left aligned) -->
+            <div class="flex space-x-4">
+              <div class="hidden md:flex space-x-4 p-5">
+                <!-- Navigation links with hover effect -->
+                <a
+                  href="#"
+                  class="text-gray-700 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-900 transition duration-300"
+                  >Link</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-900 transition duration-300"
+                  >Link</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-700 hover:text-gray-900 border-b-2 border-transparent hover:border-gray-900 transition duration-300"
+                  >Link</a
+                >
+              </div>
+            </div>
+
+            <!-- Logo (centered) -->
+            <div class="flex-grow flex justify-center">
+              <img class="h-8 w-auto" src="logo.png" alt="Your Company" />
+            </div>
+
+            <!-- Button and Search container (right aligned) -->
+            <div class="flex items-center space-x-4">
+              <!-- Search bar -->
+              <input
+                type="text"
+                placeholder="Search..."
+                class="px-4 py-2 border border-gray-300 rounded-md"
+              />
+
+              <!-- Sign up button -->
+              <a
+                href="#"
+                class="text-white bg-violet-600 hover:bg-violet-700 px-4 py-2 rounded-md"
+                >Log In</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main
+        class="flex-grow flex flex-col items-center justify-center min-h-screen space-y-6 px-4"
+      >
+        <!-- Main heading -->
+        <h1
+          class="text-4xl font-bold text-gray-800 text-center max-w-3xl tracking-tighter"
+        >
+          Quisquam necessitat vel <span class="text-violet-600">laborum</span>
+          <span class="text-violet-600">doloribus</span> delectus
+        </h1>
+        <!-- Main paragraph -->
+        <p class="text-lg text-gray-600 text-center max-w-3xl tracking-tighter">
+          Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        </p>
+        <!-- Action buttons -->
+        <div class="flex space-x-4">
+          <a
+            href="#"
+            class="text-white bg-violet-600 hover:bg-violet-800 px-6 py-2"
+            >Get started</a
+          >
+          <a href="#" class="text-black bg-gray-300 hover:bg-gray-600 px-6 py-2"
+            >Learn more</a
+          >
+        </div>
+      </main>
+
+      <!-- Additional White Section -->
+      <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+          <h1 class="text-3xl font-bold text-black mb-8 text-center">
+            What our customers are saying about us.
+          </h1>
+          <!-- Boxes Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <!-- Box 1 -->
+            <div class="relative bg-gray-100 p-8 rounded-lg shadow-md">
+              <p class="text-gray-600 italic mb-16">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Placeat explicabo sit maxime! Laborum velit et, facere
+                dignissimos sint optio recusandae, perferendis deleniti quaerat,
+                minima aliquid voluptatem odio. Illo, libero soluta?"
+              </p>
+              <!-- Extra area -->
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-violet-600 h-16 rounded-b-lg flex items-center justify-center"
+              >
+                <div class="text-white text-center px-4">
+                  <h2 class="text-md font-bold">Distincio Animi</h2>
+                  <h3 class="text-sm font-medium">ALIQAM ILLUM</h3>
+                </div>
+              </div>
+            </div>
+            <!-- Box 2 -->
+            <div class="relative bg-gray-100 p-8 rounded-lg shadow-md">
+              <p class="text-gray-600 italic mb-16">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Placeat explicabo sit maxime! Laborum velit et, facere
+                dignissimos sint optio recusandae, perferendis deleniti quaerat,
+                minima aliquid voluptatem odio. Illo, libero soluta?"
+              </p>
+              <!-- Extra area -->
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-violet-600 h-16 rounded-b-lg flex items-center justify-center"
+              >
+                <div class="text-white text-center px-4">
+                  <h2 class="text-md font-bold">Distincio Animi</h2>
+                  <h3 class="text-sm font-medium">ALIQAM ILLUM</h3>
+                </div>
+              </div>
+            </div>
+            <!-- Box 3 -->
+            <div class="relative bg-gray-100 p-8 rounded-lg shadow-md">
+              <p class="text-gray-600 italic mb-16">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Placeat explicabo sit maxime! Laborum velit et, facere
+                dignissimos sint optio recusandae, perferendis deleniti quaerat,
+                minima aliquid voluptatem odio. Illo, libero soluta?"
+              </p>
+              <!-- Extra area -->
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-violet-600 h-16 rounded-b-lg flex items-center justify-center"
+              >
+                <div class="text-white text-center px-4">
+                  <h2 class="text-md font-bold">Distincio Animi</h2>
+                  <h3 class="text-sm font-medium">ALIQAM ILLUM</h3>
+                </div>
+              </div>
+            </div>
+            <!-- Box 4 -->
+            <div class="relative bg-gray-100 p-8 rounded-lg shadow-md">
+              <p class="text-gray-600 italic mb-16">
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Placeat explicabo sit maxime! Laborum velit et, facere
+                dignissimos sint optio recusandae, perferendis deleniti quaerat,
+                minima aliquid voluptatem odio. Illo, libero soluta?"
+              </p>
+              <!-- Extra area -->
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-violet-600 h-16 rounded-b-lg flex items-center justify-center"
+              >
+                <div class="text-white text-center px-4">
+                  <h2 class="text-md font-bold">Distincio Animi</h2>
+                  <h3 class="text-sm font-medium">ALIQAM ILLUM</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="bg-gray-200 py-16">
+        <div class="container mx-auto px-4">
+          <h1 class="text-3xl font-bold text-black mb-8 text-center">
+            Contact Us
+          </h1>
+          <form class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Name -->
+              <div>
+                <label for="name" class="block text-gray-700 font-medium mb-2">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Your Name"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md"
+                />
+              </div>
+              <!-- Email -->
+              <div>
+                <label for="email" class="block text-gray-700 font-medium mb-2">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Your Email"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md"
+                />
+              </div>
+            </div>
+            <!-- Message -->
+            <div class="mt-6">
+              <label for="message" class="block text-gray-700 font-medium mb-2">
+                Message
+              </label>
+              <textarea
+                id="message"
+                rows="4"
+                placeholder="Your Message"
+                class="w-full px-4 py-2 border border-gray-300 rounded-md"
+              ></textarea>
+            </div>
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="bg-violet-600 hover:bg-violet-700 text-white w-full py-2 px-4 mt-6 rounded-md"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-gray-200 text-black py-8">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+          <!-- Links Section -->
+          <div class="flex space-x-6">
+            <a href="#" class="hover:text-gray-400">Shop</a>
+            <a href="#" class="hover:text-gray-400">About</a>
+            <a href="#" class="hover:text-gray-400">Blog</a>
+            <a href="#" class="hover:text-gray-400">Pricing</a>
+            <a href="#" class="hover:text-gray-400">Contact</a>
+          </div>
+
+          <!-- Social Media Icons -->
+          <div class="flex space-x-4">
+            <a href="#" class="text-violet-600 hover:text-white">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="text-violet-600 hover:text-white">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="text-violet-600 hover:text-white">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" class="text-violet-600 hover:text-white">
+              <i class="fa-brands fa-google"></i>
+            </a>
+            <a href="#" class="text-violet-600 hover:text-white">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
