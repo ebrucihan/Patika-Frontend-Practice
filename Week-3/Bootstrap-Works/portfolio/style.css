@@ -526,3 +526,48 @@ form textarea:focus {
   box-shadow: 0 0 1.5rem var(--main-color);
 }
 /* Footer End */
+
+/*Responsive Start*/
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header {
+    padding: 2rem 7%;
+  }
+  section {
+    padding: 10rem 7% 2rem;
+  }
+  .footer {
+    padding: 2rem 3%;
+  }
+}
+@media screen and(max-width:768px) {
+  .menu-btn {
+    display: block;
+  }
+  .navbar {
+    display: none;
+    position: absolute;
+    transform: translateY(-400px);
+  }
+}
+
+.menu-btn:checked ~ .navbar {
+  display: block;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 4rem 3%;
+  background: var(--bg-color);
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+  transition: 0.2s linear;
+}
+.menu-btn:checked ~ .navbar a {
+  display: block;
+  font-size: 2rem;
+  margin: 3rem 0;
+}

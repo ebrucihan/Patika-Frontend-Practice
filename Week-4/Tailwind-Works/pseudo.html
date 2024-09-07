@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Pseudo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-8">
+    <h1 class="text-4xl font-bold">Tailwind CSS Pseudo</h1>
+    <h2 class="text-2xl font-medium mt-4 mb-2">Pseudo-classes</h2>
+    <h3 class="text-xl font-medium mt-4 mb-2">hover:</h3>
+    <button
+      class="bg-blue-500 hover:bg-blue-700 px-5 py-2 rounded-full text-white"
+    >
+      Save Lesson
+    </button>
+    <h3 class="text-xl font-medium mt-4 mb-2">active:</h3>
+    <button
+      class="bg-blue-500 hover:bg-blue-700 active:bg-pink-900 px-5 py-2 rounded-full text-white"
+    >
+      Save Lesson
+    </button>
+    <h2 class="text-2xl font-medium mt-4 mb-2">Pseudo-elements</h2>
+    <h3 class="text-xl font-medium mt-4 mb-2">after:</h3>
+    <span class="after:content-['*'] after:ml-1 after:text-red-500"
+      >E-mail</span
+    >
+    <h3 class="text-xl font-medium mt-4 mb-2">file:</h3>
+    <input
+      type="file"
+      class="file:mr-4 file:px-2 file:rounded-full file:border-0 file:bg-red-100 file:text-red-700"
+    />
+    <h3 class="text-xl font-medium mt-4 mb-2">selection:</h3>
+    <p class="selection:bg-red-100 selection:text-red-700">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, eum
+      unde explicabo voluptates quisquam nihil harum sint ullam exercitationem
+      totam optio illo molestias nisi fuga sed repellat expedita suscipit sit.
+    </p>
+  </body>
+</html>
