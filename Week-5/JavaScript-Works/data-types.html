@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataTypes</title>
+  </head>
+  <body>
+    <script>
+      let str = "Jhon";
+      console.log(typeof str, str);
+
+      let int = 28;
+      console.log(typeof int, int);
+
+      let bool = true;
+      console.log(typeof bool, bool);
+
+      let bigint = BigInt("59854988548948948954895895489");
+      console.log(typeof bigint, bigint);
+
+      let symmbol = Symbol("Ebru");
+      console.log(typeof symmbol, symmbol);
+
+      let x;
+      console.log(typeof x, x);
+
+      let y = null;
+      console.log(typeof y, y);
+
+      let obj = {
+        name: "Jhon",
+        age: 28,
+        admin: true,
+      };
+
+      console.log(typeof obj, obj);
+
+      //Immutable
+      let name = "Jhon";
+      let cloneName = name;
+      cloneName = "Ebru";
+      console.log("immutable", name, cloneName);
+
+      //Mutable
+      let user = {
+        name: "Jhon",
+      };
+      let cloneUser = user;
+      cloneUser.name = "Ebru";
+      console.log("mutable", user, cloneUser);
+    </script>
+  </body>
+</html>
