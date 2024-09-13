@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Time and Greeting</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hoş Geldiniz!</h1>
+      <p>Lütfen adınızı giriniz:</p>
+      <input type="text" id="nameInput" placeholder="Adınız..." />
+      <button onclick="greetUser()">Gönder</button>
+
+      <h2 id="greeting"></h2>
+      <p id="dateTime"></p>
+    </div>
+
+    <script>
+      // Function to greet the user by name
+      function greetUser() {
+        // Get the value from the input field
+        const name = document.getElementById("nameInput").value;
+
+        // If name is entered, display a greeting message
+        if (name) {
+          const greetingMessage = `Merhaba, ${name}!`;
+          document.getElementById("greeting").innerText = greetingMessage;
+        }
+
+        // Update the time and start the clock
+        updateTime();
+        setInterval(updateTime, 1000); // Updates every second
+      }
+
+      // Function to display the current date and time
+      function updateTime() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString(); // Get the current time
+        const dayString = now.toLocaleDateString("tr-TR", {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        }); // Get the current date with formatting
+
+        // Display the date and time on the page
+        document.getElementById(
+          "dateTime"
+        ).innerText = `Bugün: ${dayString}, Saat: ${timeString}`;
+      }
+    </script>
+  </body>
+</html>
