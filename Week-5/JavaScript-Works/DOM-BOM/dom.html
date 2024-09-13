@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript DOM</title>
+    <style>
+      body.custom-class1 {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript DOM</h1>
+    <ul>
+      <li id="html" class="course">HTML</li>
+      <li id="css" class="course">CSS</li>
+      <li id="javascript" class="course">JavaScript</li>
+      <li id="tailwindcss" class="course">Tailwind</li>
+    </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime enim
+      ipsum, atque ea odit magni iste temporibus error, quo dicta, labore
+      cumque! Vitae, corrupti iste? Quasi qui perferendis officiis porro?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nulla
+      consectetur, obcaecati dolor nobis tempore excepturi recusandae harum ea
+      perferendis voluptatem ipsum nam vel, impedit saepe tempora! Eligendi,
+      quam reiciendis.
+    </p>
+    <script>
+      console.log(document);
+      console.log(document.documentElement);
+      console.log(document.head);
+      console.log(document.body);
+
+      var body = document.body;
+
+      body.dataset.uuid = "#123";
+      body.setAttribute("id", "custom-id");
+      body.classList.add("custom-class1");
+
+      setTimeout(() => {
+        body.style.backgroundColor = "#F4F4F4";
+      }, 2000);
+
+      //1.özellik
+      var elementById = document.getElementById("css");
+      elementById.style.backgroundColor = "yellow";
+
+      console.groupCollapsed("getElementById()");
+      console.log(elementById);
+      console.dir(elementById);
+      console.groupEnd();
+
+      //2.özellik
+      var elementByClassName = document.getElementsByClassName("course");
+
+      console.groupCollapsed("getElementsByClassName()");
+      console.log(elementByClassName);
+
+      console.groupEnd();
+
+      //3.özellik
+
+      var elementByTagName = document.getElementsByTagName("p");
+
+      console.groupCollapsed("getElementsByTagName()");
+      console.log(elementByTagName);
+
+      console.groupEnd();
+
+      //4.özelllik
+
+      var querySelector = document.querySelector(".course");
+
+      console.groupCollapsed("querySelector()");
+      console.log(querySelector);
+
+      console.groupEnd();
+
+      //5.özellik
+
+      var querySelectorAll = document.querySelectorAll(".course");
+
+      console.group("querySelectorAll()");
+      console.log(querySelectorAll);
+
+      console.groupEnd();
+    </script>
+  </body>
+</html>
