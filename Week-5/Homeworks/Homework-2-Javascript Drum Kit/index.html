@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Kit</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Page Title -->
+    <h1>Play Your Dream Song !</h1>
+
+    <!-- Drum kit container -->
+    <div class="drum-kit">
+      <!-- Drum image -->
+      <img src="img/drum.png" alt="Drum Kit" class="drum-img" />
+      <!-- Drum buttons -->
+      <div class="buttons">
+        <button class="drum" data-key="65">A</button>
+        <button class="drum" data-key="83">S</button>
+        <button class="drum" data-key="68">D</button>
+        <button class="drum" data-key="70">F</button>
+        <button class="drum" data-key="71">G</button>
+        <button class="drum" data-key="72">H</button>
+        <button class="drum" data-key="74">J</button>
+        <button class="drum" data-key="75">K</button>
+        <button class="drum" data-key="76">L</button>
+      </div>
+    </div>
+
+    <!-- Audio files for each button -->
+    <audio data-key="65" src="sound/boom.wav"></audio>
+    <audio data-key="83" src="sound/clap.wav"></audio>
+    <audio data-key="68" src="sound/hihat.wav"></audio>
+    <audio data-key="70" src="sound/kick.wav"></audio>
+    <audio data-key="71" src="sound/openhat.wav"></audio>
+    <audio data-key="72" src="sound/ride.wav"></audio>
+    <audio data-key="74" src="sound/snare.wav"></audio>
+    <audio data-key="75" src="sound/tink.wav"></audio>
+    <audio data-key="76" src="sound/tom.wav"></audio>
+
+    <!-- JS script -->
+    <script src="script.js"></script>
+  </body>
+</html>
