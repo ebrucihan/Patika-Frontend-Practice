@@ -6,12 +6,15 @@ body {
 }
 
 h1 {
+  background-color: #ffe5d0; /* Background color for the heading */
+  padding: 20px; /* Padding around the heading */
   color: #e76a17;
   font-family: "Arial Black", sans-serif;
   text-align: center;
   font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 30px;
+  border-radius: 8px; /* Rounded corners for the heading */
 }
 
 .input-group {
@@ -39,7 +42,7 @@ h1 {
   background-color: #e76a17;
   border: none;
   color: #fff;
-  padding: 10px 20px;
+  padding: 12px 90px;
   border-radius: 8px;
   transition: background-color 0.3s ease;
 }
@@ -102,16 +105,6 @@ h1 {
 
 .toast-body {
   font-size: 1rem;
-}
-
-/* Animations */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .list-group-item {
