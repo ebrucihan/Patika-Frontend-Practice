@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box; /* Box model adjustment */
+}
+
+body {
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+  background-color: #f8f9fa; /* Background color */
+}
+
+h1 {
+  font-family: "Dancing Script", cursive; /* Title font */
+  font-size: 3rem; /* Title size */
+  text-align: center; /* Center title */
+}
+
+.menu-item {
+  background-color: #fff; /* Item background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 10px; /* Inner padding */
+  text-align: center; /* Center text */
+  transition: transform 0.3s, box-shadow 0.3s; /* Hover effect */
+  width: 150px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  display: inline-block; /* Inline display */
+  margin: px; /* Item margin (empty) */
+  vertical-align: top; /* Align items */
+}
+
+.menu-item:hover {
+  transform: scale(1.05); /* Scale on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.menu-item img {
+  width: 120px; /* Image width */
+  height: 120px; /* Image height */
+  object-fit: cover; /* Cover image */
+  border: 0.25rem solid black; /* Image border */
+  border-radius: 10px; /* Rounded image corners */
+  margin-bottom: 10px; /* Space below image */
+}
+
+h3 {
+  margin-top: 8px; /* Space above title */
+  font-size: 1.3rem; /* Title size */
+  color: #333; /* Title color */
+  border-bottom: 1px solid #ff6a23; /* Line below title */
+  padding-bottom: 5px; /* Space between title and line */
+}
+
+.price {
+  font-size: 1.2rem; /* Price size */
+  color: #ff6a23; /* Price color */
+  margin-bottom: 8px; /* Space below price */
+  font-weight: bold; /* Bold price */
+}
+
+p {
+  font-size: 0.9rem; /* Paragraph size */
+  color: #666; /* Paragraph color */
+}
+
+.btn-container {
+  display: flex; /* Flexbox for buttons */
+  justify-content: center; /* Center buttons */
+  margin-bottom: 15px; /* Space below buttons */
+}
+
+.container {
+  max-width: 1000px; /* Max container width */
+  margin: 0 auto; /* Center container */
+}
