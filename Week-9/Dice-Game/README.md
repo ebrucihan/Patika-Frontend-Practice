@@ -1,8 +1,39 @@
-# React + Vite
+# Dice Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project features a simple game where two players roll dice. The player with the higher roll wins. Users can change the name of the first player and view the results.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dice Rolling**: Players can roll the dice and view the results.
+- **Player Name Change**: The first player's name can be changed by the user.
+- **Result Display**: Shows which player won or if there was a tie.
+
+## Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your_username/dice-game.git
+
+2. **Navigate to the Project Folder**:
+   ```bash
+   cd dice-game
+   
+3. **Install Required Packages**:
+    ```bash
+    npm install
+    
+4. **Run the Project:**:
+    ```bash
+    npm start
+
+## Usage
+1. To change the first player's name, type the new name in the "Enter Player Name" field and click the "Change Name" button.
+2. Click the "Roll Dice" button to roll the dice.
+3. The result will be displayed below the first player's name.
+   
+## Technologies
+-**React**: For building the user interface.
+-**CSS**: For applying styles.
+    
+
+   
