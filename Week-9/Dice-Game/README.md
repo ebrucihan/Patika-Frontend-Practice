@@ -32,9 +32,8 @@ This project features a simple game where two players roll dice. The player with
 - **The result will be displayed below the first player's name**.
    
 ## Technologies
--**React**: For building the user interface.
-
--**CSS**: For applying styles.
+- **React**: For building the user interface.
+- **CSS**: For applying styles.
     
 
    
