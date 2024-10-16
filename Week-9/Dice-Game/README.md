@@ -12,8 +12,7 @@ This project features a simple game where two players roll dice. The player with
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your_username/dice-game.git
-
+   git clone (https://github.com/ebrucihan/Patika-Frontend-Practice.git)
 2. **Navigate to the Project Folder**:
    ```bash
    cd dice-game
