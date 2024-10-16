@@ -1,0 +1,81 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #302a2a;
+  color: #f2f2f2;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.game {
+  width: 380px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.players {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.player {
+  margin: 0 50px;
+  margin-top: -20px;
+}
+
+.dice {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dice:hover {
+  transform: rotate(15deg);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #38b668;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #146314;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #e74c3c;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+h1:hover {
+  color: #c0392b;
+}
+
+.player p {
+  font-style: italic;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #38b668;
+}
