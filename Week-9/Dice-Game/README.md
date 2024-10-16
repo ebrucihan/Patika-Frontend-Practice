@@ -23,8 +23,7 @@ This project features a simple game where two players roll dice. The player with
     
 4. **Run the Project:**:
     ```bash
-    npm start
-
+    npm run dev
 ## Usage
 - **To change the first player's name, type the new name in the "Enter Player Name" field and click the "Change Name" button**.
 - **Click the "Roll Dice" button to roll the dice**.
