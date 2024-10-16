@@ -27,12 +27,13 @@ This project features a simple game where two players roll dice. The player with
     npm start
 
 ## Usage
-1. To change the first player's name, type the new name in the "Enter Player Name" field and click the "Change Name" button.
-2. Click the "Roll Dice" button to roll the dice.
-3. The result will be displayed below the first player's name.
+-**To change the first player's name, type the new name in the "Enter Player Name" field and click the "Change Name" button**.
+-**Click the "Roll Dice" button to roll the dice**.
+-**The result will be displayed below the first player's name**.
    
 ## Technologies
 -**React**: For building the user interface.
+
 -**CSS**: For applying styles.
     
 
