@@ -32,6 +32,8 @@ This project features a simple game where two players roll dice. The player with
 ## Technologies
 - **React**: For building the user interface.
 - **CSS**: For applying styles.
+- **HTML**
+- **JavaScript**
     
 ## Screenshots
 ![Ekran görüntüsü 2024-10-16 140446](https://github.com/user-attachments/assets/1a9cfb38-9b68-4744-acf0-5f2f7b3a820f)
